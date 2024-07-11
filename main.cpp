@@ -12,7 +12,7 @@ public:
 };
 
 int main(){
-    Entity a("DEDE");
+    Entity a("DEDEDE");
     Entity b(25);
     std::cin.get();
     
