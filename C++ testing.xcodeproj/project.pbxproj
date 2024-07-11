@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E3F32BE2C366BEF009DDC9B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E3F32BD2C366BEF009DDC9B /* main.cpp */; };
+		7E3F32C72C366C63009DDC9B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E3F32C52C366C63009DDC9B /* main.cpp */; };
+		7E3F32CA2C366F79009DDC9B /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E3F32C82C366F79009DDC9B /* Log.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		7E3F32BA2C366BEF009DDC9B /* C++ testing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++ testing"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E3F32BD2C366BEF009DDC9B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7E3F32C52C366C63009DDC9B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		7E3F32C62C366C63009DDC9B /* main.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = SOURCE_ROOT; };
+		7E3F32C82C366F79009DDC9B /* Log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		7E3F32BC2C366BEF009DDC9B /* C++ testing */ = {
 			isa = PBXGroup;
 			children = (
-				7E3F32BD2C366BEF009DDC9B /* main.cpp */,
+				7E3F32C52C366C63009DDC9B /* main.cpp */,
+				7E3F32C82C366F79009DDC9B /* Log.cpp */,
+				7E3F32C62C366C63009DDC9B /* main.hpp */,
 			);
 			path = "C++ testing";
 			sourceTree = "<group>";
@@ -119,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E3F32BE2C366BEF009DDC9B /* main.cpp in Sources */,
+				7E3F32CA2C366F79009DDC9B /* Log.cpp in Sources */,
+				7E3F32C72C366C63009DDC9B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
