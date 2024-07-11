@@ -4,7 +4,7 @@
 //Topic:Smart Pointers
 // Way to automaticlly store the data on heap and delete outside the scope.
 // No need to use "new" and "delete".
-// Second: shared_ptr: can be shared and copied. also including a counting system which means it will only deleted the class when the shared_ptr count to zero.
+// Third: weak_ptr: used with shared_ptr, will not count by using it.
 class Entity{
 public:
     Entity()
@@ -18,11 +18,11 @@ public:
 };
 
 int main(){
-    {std::shared_ptr<Entity> e0;
+    {std::weak_ptr<Entity> e0;// can be used to check whether the class is still alive or died.
         {std::shared_ptr<Entity> sharedentity=std::make_shared<Entity>();
             e0=sharedentity;
-        }
-    }// Because we reference the shared_ptr twice, the count is two now, so the class will be deleted after this curve brackets. Use debug  to check it.
+        }// by using the weak_ptr, the class will be detroyed after the first scope.
+    }
     std::cin.get();
         
 };
