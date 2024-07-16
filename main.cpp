@@ -19,7 +19,8 @@ int main()
     fixing.Show();
     std::cout<<std::endl;
     
-    total=coding.Sum(fixing);
+    
+    total=coding+fixing;//New: for binary operator "+" overloading
     std::cout<<"total sum(fixing)=";
     total.Show();
     std::cout<<std::endl;
